@@ -1,0 +1,82 @@
+
+
+
+/*----------- BODY --------------*/
+.page-container {
+    display: grid;
+    grid-template-areas: 
+        "nav main main main main main main main main main";
+    margin-right: 10px;
+}
+
+
+/*----------- HEADER --------------*/
+
+h1 {font-size: 28pt;}
+h2 {font-size: 18pt;}
+
+
+/*----------- NAVIGATION --------------*/
+    #hmbg-menu {
+        display: none;
+    }
+    #nav-menu {
+        height: auto;
+    }
+    .medium-nav{
+        display: block;
+    }
+    .small-nav{
+        display: none;
+    }
+    nav {
+        grid-area: nav;
+    }
+    nav ul {
+        margin-bottom: 0;
+    }
+    main {
+        grid-area: main;
+    }
+    #info-box-2 {
+        padding-right: 10px;
+}
+.tech-card {
+    margin: 0;
+    width: 48%;
+}
+.tech-card img {
+    padding-right: 20px;
+    width: 100%;
+}
+.graph-img {
+    width: 100%;
+}
+    
+#banner-img {
+    margin-top: 0;
+}
+    
+
+
+/*----------- MAIN --------------*/
+
+.right {
+    float: right;
+    margin: 2%;
+}
+main {
+    overflow: hidden;
+}
+.about-card {
+    margin: 0;
+    width: 50%;
+}
+.about-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*----------- FOOTER --------------*/
+    

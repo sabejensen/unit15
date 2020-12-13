@@ -1,0 +1,250 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: #fdfdfd;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding-top: 2%;
+    padding-bottom: 4px;
+    display: flex;
+    h1 {
+        margin: 0; 
+        margin-top: 10px;
+        font-family: 'Poppins', sans-serif; 
+        color: $primaryColor; 
+        line-height: 22pt;
+    }
+    h2 {
+        margin: 0; 
+        font-size: 14pt; 
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 11pt;
+    }
+    #header-text {
+        border-bottom: 1px solid rgb(129, 129, 129);
+        width: 100%;
+    }
+}
+header img {
+    margin-right: 5px;
+}
+.small-nav {
+    background-color: darken($primaryColor, 50%);
+}
+h1 {font-size: 18pt;}
+h2 {font-size: 16pt;}
+
+
+
+/*----------- NAVIGATION --------------*/
+#nav-menu.open {
+    height: auto;
+}
+#nav-menu {
+    height: 0;
+    overflow: hidden;
+}
+#hmbg-menu {
+    width: 50px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#hmbg-menu span {
+    font-size: 28pt;
+    line-height: 16pt;
+}
+.visible {
+    display: none;
+}
+nav {
+    grid-area: nav;
+    font-family: 'Lato', sans-serif;
+    color:#000;
+    width: 100%;
+    height: 38px;
+    max-height: 200px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    margin-bottom: 38px;
+}
+nav ul li {
+    flex-basis: 100%;
+}
+nav ul li a {
+    display: block;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    color:#000
+}
+
+nav ul li a:hover {
+    background-color: #eee;
+}
+
+
+/*----------- MAIN --------------*/
+main {
+    min-height: 10rem;
+    grid-area: main;
+}
+#info-box-2 h1 {
+    line-height: 4pt;
+    margin-top: 0;
+}
+#info-box-2 h1 i {
+    color: $secondaryColor;
+    font-size: 22pt;
+}
+.div-header h1 {
+    font-family: 'Poppins', sans-serif; 
+    color: $primaryColor;
+    font-size: 20pt;
+    margin-bottom: 0px;
+}
+.div-header {
+    padding: 0;
+    border-bottom: 1px solid rgb(129, 129, 129);
+    margin-bottom: 14px;
+}
+#banner-img {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: -38px;
+}
+.content-container {margin: 0;}
+.flex-display h2 {
+    color: $secondaryColor;
+}
+.flex-display {
+    display: flex;
+    padding-left: 10px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif; 
+    padding-bottom: 25px;
+}
+.flex-display i {
+    font-size: 10pt;
+}
+.flex-display ul {
+    margin-left: 80px;
+}
+.about-card {
+    font-family: 'Poppins', sans-serif; 
+    width: 220px;
+    margin: auto;
+}
+.about-content {
+    max-width: 220px;
+    margin: auto;
+}
+.about-div {
+    border-bottom: 1px solid rgb(129, 129, 129);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.about-div h2 {
+    color: $primaryColor;
+    margin-top: 10px;
+}
+.about-div p {
+    font-size: 10pt;
+    color: #999;
+    margin-top: -14px;
+}
+button {
+    background-image: linear-gradient(lighten($primaryColor, 20%), $primaryColor);
+    color: #fff;
+    width: 170px;
+    border-radius: 10px;
+    border: none;
+    height: 25px;
+}
+.graph-img {
+    text-align: center;
+    margin: auto;
+    max-width: 302px;
+}
+.graph-img p {
+    font-size: 8pt;
+    color: #777;
+}
+.graph-img img {
+    width: 80%;
+    margin: auto;
+}
+.tech-div {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif; 
+}
+.tech-div p {
+    font-size: 10pt;
+    color: #999;
+}
+.tech-div h2 {
+    color: $primaryColor;
+}
+.tech-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tech-content {
+    max-width: 301px;
+    margin: auto;
+}
+.tech-card {
+    margin: auto;
+}
+.logo-box {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logo-box img {
+    max-height: 40px;
+    margin: auto;
+}
+.logo-inner {
+    padding: 10px;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-image: linear-gradient($primaryColor, darken($primaryColor, 20%));
+    padding: .9rem 2%;
+    color: #fff;
+    grid-area: 'footer';
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
